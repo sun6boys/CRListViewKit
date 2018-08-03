@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class CRCellDescriptor;
 @interface CRBaseCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) CRCellDescriptor *cellDescriptor;
+
++ (NSString *)cellIdentifier;
++ (CGSize)cellSizeUseCacheWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
+
+//override by child class
++ (CGSize)cellSizeWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
 @end

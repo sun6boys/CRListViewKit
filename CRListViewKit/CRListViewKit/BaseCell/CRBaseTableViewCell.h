@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class CRTableViewCellDescriptor;
+@class CRCellDescriptor;
 @interface CRBaseTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) CRTableViewCellDescriptor *cellDescriptor;
+@property (nonatomic, strong) CRCellDescriptor *cellDescriptor;
 
 + (NSString *)cellIdentifier;
-+ (CGFloat)cellHeightUseCacheWithCellDescriptor:(CRTableViewCellDescriptor *)cellDescriptor;
++ (CGFloat)cellHeightUseCacheWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
 
 //override by child class
-+ (CGFloat)cellHeightWithCellDescriptor:(CRTableViewCellDescriptor *)cellDescriptor;
++ (CGFloat)cellHeightWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
 @end

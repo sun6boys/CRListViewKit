@@ -10,7 +10,6 @@
 
 @implementation CRListViewDataSource (TableViewRegister)
 
-
 - (void)registerCellClass:(Class )cellClass forTableView:(UITableView *)tableView
 {
     [tableView registerClass:cellClass forCellReuseIdentifier:[cellClass description]];

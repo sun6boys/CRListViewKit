@@ -7,7 +7,7 @@
 //
 
 #import "CRBaseTableViewCell.h"
-#import "CRTableViewCellDescriptor.h"
+#import "CRCellDescriptor.h"
 
 @implementation CRBaseTableViewCell
 
@@ -17,11 +17,8 @@
     return nil;
 }
 
-+ (CGFloat)cellHeightUseCacheWithCellDescriptor:(CRTableViewCellDescriptor *)cellDescriptor
++ (CGFloat)cellHeightUseCacheWithCellDescriptor:(CRCellDescriptor *)cellDescriptor
 {
-    if(cellDescriptor.allowCacheHeight)
-        return [self cellHeightWithCellDescriptor:cellDescriptor];
-    
     if([cellDescriptor hasCachedCellHeight])
         return [cellDescriptor cellHeight];
     
@@ -31,7 +28,7 @@
 }
 
 //override by child class
-+ (CGFloat)cellHeightWithCellDescriptor:(CRTableViewCellDescriptor *)cellDescriptor
++ (CGFloat)cellHeightWithCellDescriptor:(CRCellDescriptor *)cellDescriptor
 {
     return 0;
 }

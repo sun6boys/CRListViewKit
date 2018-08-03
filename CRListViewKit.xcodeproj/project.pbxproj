@@ -17,9 +17,7 @@
 		D58D2F0A2112AC7300FAB8F9 /* CRBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F092112AC7300FAB8F9 /* CRBaseCollectionViewCell.m */; };
 		D58D2F0E2112ADAD00FAB8F9 /* CRViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F0D2112ADAD00FAB8F9 /* CRViewLayout.m */; };
 		D58D2F182112B4AD00FAB8F9 /* CRListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F172112B4AD00FAB8F9 /* CRListViewDataSource.m */; };
-		D58D2F212112B60F00FAB8F9 /* CRTableViewCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1D2112B60F00FAB8F9 /* CRTableViewCellDescriptor.m */; };
 		D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */; };
-		D58D2F232112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1F2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m */; };
 		D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +41,7 @@
 		D58D2F162112B4AD00FAB8F9 /* CRListViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRListViewDataSource.h; sourceTree = "<group>"; };
 		D58D2F172112B4AD00FAB8F9 /* CRListViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRListViewDataSource.m; sourceTree = "<group>"; };
 		D58D2F1B2112B60F00FAB8F9 /* CRCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCellDescriptor.h; sourceTree = "<group>"; };
-		D58D2F1C2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCollectionViewCellDescriptor.h; sourceTree = "<group>"; };
-		D58D2F1D2112B60F00FAB8F9 /* CRTableViewCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTableViewCellDescriptor.m; sourceTree = "<group>"; };
 		D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCellDescriptor.m; sourceTree = "<group>"; };
-		D58D2F1F2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCollectionViewCellDescriptor.m; sourceTree = "<group>"; };
-		D58D2F202112B60F00FAB8F9 /* CRTableViewCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTableViewCellDescriptor.h; sourceTree = "<group>"; };
 		D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CRListViewDataSource+Register.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,10 +144,6 @@
 			children = (
 				D58D2F1B2112B60F00FAB8F9 /* CRCellDescriptor.h */,
 				D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */,
-				D58D2F1C2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.h */,
-				D58D2F1F2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m */,
-				D58D2F202112B60F00FAB8F9 /* CRTableViewCellDescriptor.h */,
-				D58D2F1D2112B60F00FAB8F9 /* CRTableViewCellDescriptor.m */,
 			);
 			path = CellDescriptors;
 			sourceTree = "<group>";
@@ -242,9 +232,7 @@
 				D58D2F072112AC5800FAB8F9 /* CRBaseTableViewCell.m in Sources */,
 				D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */,
 				D58D2EF9211297BB00FAB8F9 /* main.m in Sources */,
-				D58D2F212112B60F00FAB8F9 /* CRTableViewCellDescriptor.m in Sources */,
 				D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */,
-				D58D2F232112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m in Sources */,
 				D58D2F0E2112ADAD00FAB8F9 /* CRViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,6 @@
 @end
 
 
-
 @interface CRListViewDataSource (TableViewRegister)
 
 - (void)registerCellClass:(Class )cellClass forTableView:(UITableView *)tableView;
