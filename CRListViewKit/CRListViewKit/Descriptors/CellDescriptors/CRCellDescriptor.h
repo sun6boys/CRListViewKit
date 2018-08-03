@@ -11,7 +11,7 @@
 
 @interface CRCellDescriptor : NSObject
 
-@property (nonatomic, copy) NSString *cellIdentifier;
+@property (nonatomic, strong) Class cellClass;
 @property (nonatomic, strong) id cellData;
 
 @property (nonatomic, assign) BOOL allowCacheHeight;
