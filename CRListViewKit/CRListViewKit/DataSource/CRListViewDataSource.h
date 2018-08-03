@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CRListViewDataSource : NSObject
+@interface CRListViewDataSource : NSObject<UICollectionViewDataSource,UITableViewDataSource>
+
 
 @end
 
