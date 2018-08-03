@@ -20,8 +20,6 @@
 		D58D2F212112B60F00FAB8F9 /* CRTableViewCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1D2112B60F00FAB8F9 /* CRTableViewCellDescriptor.m */; };
 		D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */; };
 		D58D2F232112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1F2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m */; };
-		D5EF83F62114225E00D04ACF /* UITableView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF83F52114225E00D04ACF /* UITableView+Register.m */; };
-		D5EF83F92114227300D04ACF /* UICollectionView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF83F82114227300D04ACF /* UICollectionView+Register.m */; };
 		D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +48,6 @@
 		D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCellDescriptor.m; sourceTree = "<group>"; };
 		D58D2F1F2112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCollectionViewCellDescriptor.m; sourceTree = "<group>"; };
 		D58D2F202112B60F00FAB8F9 /* CRTableViewCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTableViewCellDescriptor.h; sourceTree = "<group>"; };
-		D5EF83F42114225E00D04ACF /* UITableView+Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Register.h"; sourceTree = "<group>"; };
-		D5EF83F52114225E00D04ACF /* UITableView+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Register.m"; sourceTree = "<group>"; };
-		D5EF83F72114227300D04ACF /* UICollectionView+Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Register.h"; sourceTree = "<group>"; };
-		D5EF83F82114227300D04ACF /* UICollectionView+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Register.m"; sourceTree = "<group>"; };
-		D5EF84042114340A00D04ACF /* CRListViewDataSource+Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CRListViewDataSource+Register.h"; sourceTree = "<group>"; };
 		D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CRListViewDataSource+Register.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +132,6 @@
 			children = (
 				D58D2F162112B4AD00FAB8F9 /* CRListViewDataSource.h */,
 				D58D2F172112B4AD00FAB8F9 /* CRListViewDataSource.m */,
-				D5EF84042114340A00D04ACF /* CRListViewDataSource+Register.h */,
 				D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */,
 			);
 			path = DataSource;
@@ -169,10 +161,6 @@
 		D5EF83F32114222E00D04ACF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D5EF83F42114225E00D04ACF /* UITableView+Register.h */,
-				D5EF83F52114225E00D04ACF /* UITableView+Register.m */,
-				D5EF83F72114227300D04ACF /* UICollectionView+Register.h */,
-				D5EF83F82114227300D04ACF /* UICollectionView+Register.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -252,14 +240,12 @@
 				D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */,
 				D58D2EEE211297BA00FAB8F9 /* ViewController.m in Sources */,
 				D58D2F072112AC5800FAB8F9 /* CRBaseTableViewCell.m in Sources */,
-				D5EF83F62114225E00D04ACF /* UITableView+Register.m in Sources */,
 				D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */,
 				D58D2EF9211297BB00FAB8F9 /* main.m in Sources */,
 				D58D2F212112B60F00FAB8F9 /* CRTableViewCellDescriptor.m in Sources */,
 				D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */,
 				D58D2F232112B60F00FAB8F9 /* CRCollectionViewCellDescriptor.m in Sources */,
 				D58D2F0E2112ADAD00FAB8F9 /* CRViewLayout.m in Sources */,
-				D5EF83F92114227300D04ACF /* UICollectionView+Register.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
