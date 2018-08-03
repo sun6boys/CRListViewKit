@@ -23,7 +23,7 @@
 - (void)registerHeaderFooterViewClass:(Class)viewClass forTableView:(UITableView *)tableView;
 - (void)registerHeaderFooterViewNibWithClass:(Class)viewClass forTableView:(UITableView *)tableView;
 
-//batch register cell
+//batch register cells
 - (void)registCellWithClassList:(NSArray <Class>*)classList forTableView:(UITableView *)tableView;
 - (void)registCellNibWithClassList:(NSArray <Class>*)classList forTableView:(UITableView *)tableView;
 
@@ -40,7 +40,7 @@
 - (void)registerElementKindSectionHeaderViewNibWithClass:(Class)viewClass forCollectionView:(UICollectionView *)collectionView;
 - (void)registerElementKindSectionFooterViewNibWithClass:(Class)viewClass forCollectionView:(UICollectionView *)collectionView;
 
-//batch register cell
+//batch register cells
 - (void)registCellWithClassList:(NSArray <Class>*)classList forCollectionView:(UICollectionView *)collectionView;
 - (void)registCellNibWithClassList:(NSArray <Class>*)classList forCollectionView:(UICollectionView *)collectionView;
 
