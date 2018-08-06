@@ -53,7 +53,7 @@
 
 - (void)insertCellDescriptor:(CRCellDescriptor *)cellDescriptor atIndex:(NSUInteger)index
 {
-    if(index >= self.cellDescriptors.count)
+    if(index >= self.cellDescriptors.count || cellDescriptor == nil)
         return;
     
     [self.cellDescriptors insertObject:cellDescriptor atIndex:index];
@@ -64,7 +64,7 @@
     [self.cellDescriptors addObjectsFromArray:array];
 }
 
-- (void)celar
+- (void)celarAllDescriptprs
 {
     [self.cellDescriptors removeAllObjects];
 }

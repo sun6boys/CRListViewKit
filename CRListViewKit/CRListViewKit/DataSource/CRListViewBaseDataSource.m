@@ -7,6 +7,8 @@
 //
 
 #import "CRListViewBaseDataSource.h"
+#import <UIKit/UIKit.h>
+#import "CRListViewSectionInfo.h"
 
 @interface CRListViewBaseDataSource()
 
@@ -18,32 +20,55 @@
 #pragma mark - public methods
 - (CRCellDescriptor *)cellDescriptorAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    if(indexPath.section >= self.items.count)
+        return nil;
+    
+    CRListViewSectionInfo *sectionInfo = self.items[indexPath.section];
+    return [sectionInfo cellDescriptorAtIndex:indexPath.row];
 }
 
 - (void)removeCellDescriptorAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section >= self.items.count)
+        return;
     
+    CRListViewSectionInfo *sectionInfo = self.items[indexPath.section];
+    [sectionInfo removeCellDescriptorAtIndex:indexPath.row];
 }
 
 - (void)insertCellDescriptor:(CRCellDescriptor *)cellDescriptor atIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section >= self.items.count)
+        return;
     
+    CRListViewSectionInfo *sectionInfo = self.items[indexPath.section];
+    [sectionInfo insertCellDescriptor:cellDescriptor atIndex:indexPath.row];
 }
 
 - (void)addCellDescriptor:(CRCellDescriptor *)cellDescriptor atSection:(NSUInteger)section
 {
+    if(section >= self.items.count)
+        return;
     
+    CRListViewSectionInfo *sectionInfo = self.items[section];
+    [sectionInfo insertCellDescriptor:cellDescriptor atIndex:sectionInfo.numberOfRows];
 }
 
+//handle sectionInfo
 - (void)addSectionInfo:(CRListViewSectionInfo *)sectionInfo
 {
+    if(sectionInfo == nil)
+        return;
     
+    [self.items addObject:sectionInfo];
 }
 
-- (void)insertSectionInfo:(CRListViewSectionInfo *)sectionInfo atIndexPath:(NSIndexPath *)indexPath
+- (void)insertSectionInfo:(CRListViewSectionInfo *)sectionInfo atSection:(NSUInteger)section;
 {
+    if(section >= self.items.count || sectionInfo == nil)
+        return;
     
+    [self.items insertObject:sectionInfo atIndex:section];
 }
 
 - (void)removeSectionInfo:(CRListViewSectionInfo *)sectionInfo
@@ -62,6 +87,11 @@
 - (void)clearAllSectionInfos
 {
     [self.items removeAllObjects];
+}
+
+- (NSUInteger)numberOfSections
+{
+    return self.items.count;
 }
 
 #pragma mark - getters

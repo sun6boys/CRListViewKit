@@ -23,9 +23,9 @@
 - (void)addCellDescriptor:(CRCellDescriptor *)cellDescriptor atSection:(NSUInteger)section;
 
 
-/// Find/Remove/Insert/Add an CRCellDescriptor at the specified index.
+/// Find/Remove/Insert/Add an CRListViewSectionInfo at the specified index.
 - (void)addSectionInfo:(CRListViewSectionInfo *)sectionInfo;
-- (void)insertSectionInfo:(CRListViewSectionInfo *)sectionInfo atIndexPath:(NSIndexPath *)indexPath;
+- (void)insertSectionInfo:(CRListViewSectionInfo *)sectionInfo atSection:(NSUInteger)section;
 - (void)removeSectionInfo:(CRListViewSectionInfo *)sectionInfo;
 - (CRListViewSectionInfo *)sectionInfoAtSection:(NSUInteger)section;
 - (void)clearAllSectionInfos;
