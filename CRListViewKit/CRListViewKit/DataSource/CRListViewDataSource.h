@@ -6,11 +6,17 @@
 //  Copyright © 2018年 chuxiaolong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CRListViewBaseDataSource.h"
 #import <UIKit/UIKit.h>
 
-@interface CRListViewDataSource : NSObject<UICollectionViewDataSource,UITableViewDataSource>
+@interface CRListViewDataSource : CRListViewBaseDataSource<UICollectionViewDataSource,UITableViewDataSource>
 
+@property (nonatomic, copy) NSString *noContentTitle;
+@property (nonatomic, copy) NSString *noContentMessage;
+@property (nonatomic, strong) UIImage *noContentImage;
+
+@property (nonatomic, copy) NSString *errorMessage;
+@property (nonatomic, copy) NSString *errorTitle;
 
 @end
 
