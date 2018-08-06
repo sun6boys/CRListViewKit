@@ -27,7 +27,7 @@
     return cellHeight;
 }
 
-//override by child class
+//To be implemented by subclasses…
 + (CGFloat)cellHeightWithCellDescriptor:(CRCellDescriptor *)cellDescriptor
 {
     return 0;

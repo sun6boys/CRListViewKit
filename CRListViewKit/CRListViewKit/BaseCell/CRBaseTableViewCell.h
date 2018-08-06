@@ -16,6 +16,6 @@
 + (NSString *)cellIdentifier;
 + (CGFloat)cellHeightUseCacheWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
 
-//override by child class
+//To be implemented by subclasses…
 + (CGFloat)cellHeightWithCellDescriptor:(CRCellDescriptor *)cellDescriptor;
 @end
