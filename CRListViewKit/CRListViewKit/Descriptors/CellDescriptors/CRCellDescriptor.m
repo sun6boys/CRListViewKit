@@ -22,14 +22,36 @@
 
 @implementation CRCellDescriptor
 
-@end
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _allowCacheHeightOrSize = YES;
+        _autoCacheHeightOrSize = YES;
+    }
+    return self;
+}
 
+#pragma mark - setters
+- (void)setAllowCacheHeightOrSize:(BOOL)allowCacheHeightOrSize
+{
+    _allowCacheHeightOrSize = allowCacheHeightOrSize;
+    if(allowCacheHeightOrSize == NO){
+        [self clearSizeCache];
+        [self clearHeightCache];
+    }
+}
+
+@end
 
 
 @implementation CRCellDescriptor (TableViewCellHeight)
 
 - (void)cacheTableViewCellHeight:(CGFloat)height
 {
+    if(self.allowCacheHeightOrSize == NO)
+        return;
+    
     _cellHeight = height;
     _hasCachedCellHeight = YES;
 }
@@ -55,6 +77,9 @@
 
 - (void)cacheCollectionViewCellSize:(CGSize)size
 {
+    if(self.allowCacheHeightOrSize == NO)
+        return;
+    
     _cellSize = size;
     _hasCachedCellSize = YES;
 }

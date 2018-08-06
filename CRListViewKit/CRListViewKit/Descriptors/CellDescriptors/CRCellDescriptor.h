@@ -14,6 +14,8 @@
 @property (nonatomic, strong) Class cellClass;
 @property (nonatomic, strong) id cellData;
 
+@property (nonatomic, assign) BOOL allowCacheHeightOrSize; //default is YES.
+@property (nonatomic, assign) BOOL autoCacheHeightOrSize;  //default is YES
 @end
 
 @interface CRCellDescriptor (TableViewCellHeight)
