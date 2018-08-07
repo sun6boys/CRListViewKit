@@ -6,21 +6,35 @@
 //  Copyright © 2018年 chuxiaolong. All rights reserved.
 //
 
-#import "CRListViewBaseDataSource.h"
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CRListViewDataSource : CRListViewBaseDataSource<UICollectionViewDataSource,UITableViewDataSource>
+@class CRCellDescriptor,CRListViewSectionInfo;
+@interface CRListViewDataSource : NSObject<UICollectionViewDataSource,UITableViewDataSource>
 
-@property (nonatomic, copy) NSString *noContentTitle;
-@property (nonatomic, copy) NSString *noContentMessage;
-@property (nonatomic, strong) UIImage *noContentImage;
+/// The number of sections in this data source.
+@property (nonatomic, assign, readonly) NSUInteger numberOfSections;
+/// The items represented by this data source.
+@property (nonatomic, strong, readonly) NSMutableArray<CRListViewSectionInfo *> *items;
 
-@property (nonatomic, copy) NSString *errorMessage;
-@property (nonatomic, copy) NSString *errorTitle;
+/// Find/Remove/Insert/Add an CRCellDescriptor at the specified index path.
+- (CRCellDescriptor *)cellDescriptorAtIndexPath:(NSIndexPath *)indexPath;
+- (void)removeCellDescriptorAtIndexPath:(NSIndexPath *)indexPath;
+- (void)insertCellDescriptor:(CRCellDescriptor *)cellDescriptor atIndexPath:(NSIndexPath *)indexPath;
+- (void)addCellDescriptor:(CRCellDescriptor *)cellDescriptor atSection:(NSUInteger)section;
+
+
+/// Find/Remove/Insert/Add an CRListViewSectionInfo at the specified index.
+- (void)addSectionInfo:(CRListViewSectionInfo *)sectionInfo;
+- (void)insertSectionInfo:(CRListViewSectionInfo *)sectionInfo atSection:(NSUInteger)section;
+- (void)removeSectionInfo:(CRListViewSectionInfo *)sectionInfo;
+- (CRListViewSectionInfo *)sectionInfoAtSection:(NSUInteger)section;
+- (void)clearAllSectionInfos;
 
 //To be implemented by subclasses…
 - (void)registerTableViewItemsForTableView:(UITableView *)tableView;
 - (void)registerCollectionViewItemsForCollectionView:(UICollectionView *)collectionView;
+
 @end
 
 

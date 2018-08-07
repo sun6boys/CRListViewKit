@@ -19,7 +19,6 @@
 		D58D2F182112B4AD00FAB8F9 /* CRListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F172112B4AD00FAB8F9 /* CRListViewDataSource.m */; };
 		D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */; };
 		D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */; };
-		D5EF840921181E8100D04ACF /* CRListViewBaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF840821181E8100D04ACF /* CRListViewBaseDataSource.m */; };
 		D5EF840D2118204F00D04ACF /* CRListViewSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF840C2118204F00D04ACF /* CRListViewSectionInfo.m */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +44,6 @@
 		D58D2F1B2112B60F00FAB8F9 /* CRCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCellDescriptor.h; sourceTree = "<group>"; };
 		D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCellDescriptor.m; sourceTree = "<group>"; };
 		D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CRListViewDataSource+Register.m"; sourceTree = "<group>"; };
-		D5EF840721181E8100D04ACF /* CRListViewBaseDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRListViewBaseDataSource.h; sourceTree = "<group>"; };
-		D5EF840821181E8100D04ACF /* CRListViewBaseDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRListViewBaseDataSource.m; sourceTree = "<group>"; };
 		D5EF840B2118204F00D04ACF /* CRListViewSectionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRListViewSectionInfo.h; sourceTree = "<group>"; };
 		D5EF840C2118204F00D04ACF /* CRListViewSectionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRListViewSectionInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +127,6 @@
 		D58D2F152112B48A00FAB8F9 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				D5EF840721181E8100D04ACF /* CRListViewBaseDataSource.h */,
-				D5EF840821181E8100D04ACF /* CRListViewBaseDataSource.m */,
 				D58D2F162112B4AD00FAB8F9 /* CRListViewDataSource.h */,
 				D58D2F172112B4AD00FAB8F9 /* CRListViewDataSource.m */,
 				D5EF84052114340A00D04ACF /* CRListViewDataSource+Register.m */,
@@ -253,7 +248,6 @@
 				D58D2EF9211297BB00FAB8F9 /* main.m in Sources */,
 				D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */,
 				D58D2F0E2112ADAD00FAB8F9 /* CRViewLayout.m in Sources */,
-				D5EF840921181E8100D04ACF /* CRListViewBaseDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
