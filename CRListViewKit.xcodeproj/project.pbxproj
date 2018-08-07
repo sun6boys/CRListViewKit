@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53D0A5A211971FC009483EC /* CRListViewAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A59211971FC009483EC /* CRListViewAdaptor.m */; };
 		D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2EEA211297BA00FAB8F9 /* AppDelegate.m */; };
 		D58D2EEE211297BA00FAB8F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2EED211297BA00FAB8F9 /* ViewController.m */; };
 		D58D2EF1211297BA00FAB8F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D2EEF211297BA00FAB8F9 /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D53D0A58211971FC009483EC /* CRListViewAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRListViewAdaptor.h; sourceTree = "<group>"; };
+		D53D0A59211971FC009483EC /* CRListViewAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRListViewAdaptor.m; sourceTree = "<group>"; };
 		D58D2EE6211297BA00FAB8F9 /* CRListViewKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRListViewKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D2EE9211297BA00FAB8F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D58D2EEA211297BA00FAB8F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53D0A57211971C6009483EC /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				D53D0A58211971FC009483EC /* CRListViewAdaptor.h */,
+				D53D0A59211971FC009483EC /* CRListViewAdaptor.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		D58D2EDD211297BA00FAB8F9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +107,7 @@
 		D58D2EFF211297E500FAB8F9 /* CRListViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				D5EF83F32114222E00D04ACF /* Categories */,
+				D53D0A57211971C6009483EC /* Adapter */,
 				D58D2F192112B60F00FAB8F9 /* Descriptors */,
 				D58D2F152112B48A00FAB8F9 /* DataSource */,
 				D58D2F0B2112AD2100FAB8F9 /* Layout */,
@@ -150,13 +162,6 @@
 				D58D2F1E2112B60F00FAB8F9 /* CRCellDescriptor.m */,
 			);
 			path = CellDescriptors;
-			sourceTree = "<group>";
-		};
-		D5EF83F32114222E00D04ACF /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		D5EF840A2118203B00D04ACF /* SectionInfo */ = {
@@ -243,6 +248,7 @@
 				D58D2F0A2112AC7300FAB8F9 /* CRBaseCollectionViewCell.m in Sources */,
 				D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */,
 				D58D2EEE211297BA00FAB8F9 /* ViewController.m in Sources */,
+				D53D0A5A211971FC009483EC /* CRListViewAdaptor.m in Sources */,
 				D58D2F072112AC5800FAB8F9 /* CRBaseTableViewCell.m in Sources */,
 				D58D2F222112B60F00FAB8F9 /* CRCellDescriptor.m in Sources */,
 				D58D2EF9211297BB00FAB8F9 /* main.m in Sources */,
