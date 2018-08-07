@@ -18,6 +18,9 @@
 @property (nonatomic, copy) NSString *errorMessage;
 @property (nonatomic, copy) NSString *errorTitle;
 
+//To be implemented by subclasses…
+- (void)registerTableViewItemsForTableView:(UITableView *)tableView;
+- (void)registerCollectionViewItemsForCollectionView:(UICollectionView *)collectionView;
 @end
 
 

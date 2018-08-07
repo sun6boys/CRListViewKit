@@ -7,9 +7,18 @@
 //
 
 #import "CRListViewDataSource.h"
+
 #import "CRListViewSectionInfo.h"
+#import "CRCellDescriptor.h"
+#import "CRBaseCollectionViewCell.h"
+#import "CRBaseTableViewCell.h"
 
 @implementation CRListViewDataSource
+
+#pragma mark - public methods
+- (void)registerTableViewItemsForTableView:(UITableView *)tableView{}
+- (void)registerCollectionViewItemsForCollectionView:(UICollectionView *)collectionView{}
+
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -25,23 +34,38 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    CRCellDescriptor *cellDescriptor = [self cellDescriptorAtIndexPath:indexPath];
+    CRBaseCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[cellDescriptor.cellClass description] forIndexPath:indexPath];
+    if(cell != nil){
+        cell.cellDescriptor = cellDescriptor;
+        return cell;
+    }
+    return [[CRBaseCollectionViewCell alloc] init];
 }
 
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [self numberOfSections];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return nil;
+    CRListViewSectionInfo *sectionInfo = [self sectionInfoAtSection:section];
+    return [sectionInfo numberOfRows];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 0;
+    CRCellDescriptor *cellDescriptor = [self cellDescriptorAtIndexPath:indexPath];
+    CRBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[cellDescriptor.cellClass description] forIndexPath:indexPath];
+    if(cell != nil){
+        cell.cellDescriptor = cellDescriptor;
+        return cell;
+    }
+    return [[UITableViewCell alloc] init];
 }
+
+
 @end
