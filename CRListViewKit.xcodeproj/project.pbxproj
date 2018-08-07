@@ -71,6 +71,13 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
+		D53D0A5B21197E1A009483EC /* Event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		D58D2EDD211297BA00FAB8F9 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +114,7 @@
 		D58D2EFF211297E500FAB8F9 /* CRListViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				D53D0A5B21197E1A009483EC /* Event */,
 				D53D0A57211971C6009483EC /* Adapter */,
 				D58D2F192112B60F00FAB8F9 /* Descriptors */,
 				D58D2F152112B48A00FAB8F9 /* DataSource */,
