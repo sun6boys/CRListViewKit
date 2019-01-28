@@ -24,5 +24,4 @@
 - (void)insertCellDescriptor:(CRCellDescriptor *)cellDescriptor atIndex:(NSUInteger)index;
 - (void)addCellDescriptorsFromArray:(NSArray<CRCellDescriptor *> *)array;
 - (void)celarAllDescriptprs;
-
 @end

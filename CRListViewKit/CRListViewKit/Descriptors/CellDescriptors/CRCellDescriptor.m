@@ -60,6 +60,7 @@
 {
     _hasCachedCellHeight = NO;
 }
+
 - (CGFloat)cellHeight
 {
     return _cellHeight;

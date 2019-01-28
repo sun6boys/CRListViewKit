@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D53D0A5A211971FC009483EC /* CRListViewAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A59211971FC009483EC /* CRListViewAdaptor.m */; };
-		D53D0A5E211983F5009483EC /* UIResponder+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A5D211983F5009483EC /* UIResponder+Event.m */; };
+		D53D0A5E211983F5009483EC /* UIResponder+CREvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A5D211983F5009483EC /* UIResponder+CREvent.m */; };
 		D53D0A61211984F6009483EC /* CRUIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A60211984F6009483EC /* CRUIEvent.m */; };
-		D53D0A64211C1155009483EC /* CRUIEventReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D0A63211C1155009483EC /* CRUIEventReceiver.m */; };
 		D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2EEA211297BA00FAB8F9 /* AppDelegate.m */; };
 		D58D2EEE211297BA00FAB8F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D2EED211297BA00FAB8F9 /* ViewController.m */; };
 		D58D2EF1211297BA00FAB8F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D2EEF211297BA00FAB8F9 /* Main.storyboard */; };
@@ -29,12 +28,10 @@
 /* Begin PBXFileReference section */
 		D53D0A58211971FC009483EC /* CRListViewAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRListViewAdaptor.h; sourceTree = "<group>"; };
 		D53D0A59211971FC009483EC /* CRListViewAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRListViewAdaptor.m; sourceTree = "<group>"; };
-		D53D0A5C211983F5009483EC /* UIResponder+Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Event.h"; sourceTree = "<group>"; };
-		D53D0A5D211983F5009483EC /* UIResponder+Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Event.m"; sourceTree = "<group>"; };
+		D53D0A5C211983F5009483EC /* UIResponder+CREvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+CREvent.h"; sourceTree = "<group>"; };
+		D53D0A5D211983F5009483EC /* UIResponder+CREvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+CREvent.m"; sourceTree = "<group>"; };
 		D53D0A5F211984F6009483EC /* CRUIEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUIEvent.h; sourceTree = "<group>"; };
 		D53D0A60211984F6009483EC /* CRUIEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUIEvent.m; sourceTree = "<group>"; };
-		D53D0A62211C1155009483EC /* CRUIEventReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUIEventReceiver.h; sourceTree = "<group>"; };
-		D53D0A63211C1155009483EC /* CRUIEventReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUIEventReceiver.m; sourceTree = "<group>"; };
 		D58D2EE6211297BA00FAB8F9 /* CRListViewKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRListViewKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58D2EE9211297BA00FAB8F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D58D2EEA211297BA00FAB8F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,12 +80,10 @@
 		D53D0A5B21197E1A009483EC /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				D53D0A5C211983F5009483EC /* UIResponder+Event.h */,
-				D53D0A5D211983F5009483EC /* UIResponder+Event.m */,
+				D53D0A5C211983F5009483EC /* UIResponder+CREvent.h */,
+				D53D0A5D211983F5009483EC /* UIResponder+CREvent.m */,
 				D53D0A5F211984F6009483EC /* CRUIEvent.h */,
 				D53D0A60211984F6009483EC /* CRUIEvent.m */,
-				D53D0A62211C1155009483EC /* CRUIEventReceiver.h */,
-				D53D0A63211C1155009483EC /* CRUIEventReceiver.m */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -270,7 +265,6 @@
 				D5EF840D2118204F00D04ACF /* CRListViewSectionInfo.m in Sources */,
 				D58D2F0A2112AC7300FAB8F9 /* CRBaseCollectionViewCell.m in Sources */,
 				D5EF84062114340A00D04ACF /* CRListViewDataSource+Register.m in Sources */,
-				D53D0A64211C1155009483EC /* CRUIEventReceiver.m in Sources */,
 				D58D2EEE211297BA00FAB8F9 /* ViewController.m in Sources */,
 				D53D0A5A211971FC009483EC /* CRListViewAdaptor.m in Sources */,
 				D58D2F072112AC5800FAB8F9 /* CRBaseTableViewCell.m in Sources */,
@@ -279,7 +273,7 @@
 				D58D2EEB211297BA00FAB8F9 /* AppDelegate.m in Sources */,
 				D53D0A61211984F6009483EC /* CRUIEvent.m in Sources */,
 				D58D2F0E2112ADAD00FAB8F9 /* CRViewLayout.m in Sources */,
-				D53D0A5E211983F5009483EC /* UIResponder+Event.m in Sources */,
+				D53D0A5E211983F5009483EC /* UIResponder+CREvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

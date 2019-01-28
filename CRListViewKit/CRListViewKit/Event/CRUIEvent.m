@@ -7,7 +7,7 @@
 //
 
 #import "CRUIEvent.h"
-#import "UIResponder+Event.h"
+#import "UIResponder+CREvent.h"
 
 @implementation CRUIEvent
 
@@ -20,7 +20,12 @@
 
 - (void)sendForm:(UIResponder *)source
 {
-    [source handleUIEvent:self];
+    
+}
+
+- (void)sendForm:(UIResponder *)source afterDelay:(NSTimeInterval)delay
+{
+    
 }
 
 @end
